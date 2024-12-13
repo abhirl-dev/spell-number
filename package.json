@@ -1,0 +1,25 @@
+{
+  "name": "spell-number",
+  "version": "1.0.0",
+  "description": "convert number to word",
+  "main": "./dist/index.d.ts",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup"
+  },
+  "keywords": [
+    "converter",
+    "number to word",
+    "number to text"
+  ],
+  "repository": {
+    "directory": "https://github.com/abhirl-dev/common-util-kit"
+  },
+  "author": "Independent Dev Team",
+  "license": "MIT",
+  "devDependencies": {
+    "tsup": "^8.0.2",
+    "typescript": "^5.3.3"
+  }
+}
