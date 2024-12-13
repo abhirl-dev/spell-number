@@ -25,15 +25,14 @@ function _generateWordString(number: number, arg: any = []): string {
     var remainder, word,
         words = arguments[1];
 
-    // We’re done
     if (number === 0) {
         return !words ? 'zero' : words.join(' ').replace(/,$/, '');
     }
-    // First run
+
     if (!words) {
         words = [];
     }
-    // If negative, prepend “minus”
+
     if (number < 0) {
         words.push('minus');
         number = Math.abs(number);
@@ -46,7 +45,7 @@ function _generateWordString(number: number, arg: any = []): string {
     } else if (number < CONST.ONE_HUNDRED) {
         remainder = number % CONST.TEN;
         word = CONST.TENTHS_LESS_THAN_HUNDRED[Math.floor(number / CONST.TEN)];
-        // In case of remainder, we need to handle it here to be able to add the “-”
+
         if (remainder) {
             word += '-' + CONST.LESS_THAN_TWENTY[remainder];
             remainder = 0;
