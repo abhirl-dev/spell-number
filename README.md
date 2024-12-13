@@ -5,7 +5,7 @@
 ## toWordString
 
 ```
-import { SpellNumber } from ".";
+import { SpellNumber } from "spell-number";
 
 SpellNumber.toWordString(100);
 
@@ -15,7 +15,7 @@ SpellNumber.toWordString(100, true);
 ## toWordOrdinalString
 
 ```
-import { SpellNumber } from ".";
+import { SpellNumber } from "spell-number";
 
 SpellNumber.toWordOrdinalString(100);
 ```
@@ -23,7 +23,7 @@ SpellNumber.toWordOrdinalString(100);
 ## toOrdinalString
 
 ```
-import { SpellNumber } from ".";
+import { SpellNumber } from "spell-number";
 
 SpellNumber.toOrdinalString(100);
 ```
